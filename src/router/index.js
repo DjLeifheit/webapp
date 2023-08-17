@@ -1,5 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
+import getraenkeKarteView from "@/views/GetraenkeKarteView.vue";
+import SpeisekarteView from "@/views/SpeisekarteView.vue";
 
 const routes = [
   {
@@ -15,6 +17,16 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/AboutView.vue"),
+  },
+  {
+    path: "/getraenkekarte",
+    name: "Getraenkekarte",
+    component: getraenkeKarteView,
+  },
+  {
+    path: "/speisekarte",
+    name: "Speisekarte",
+    component: SpeisekarteView,
   },
 ];
 
