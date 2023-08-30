@@ -1,11 +1,14 @@
 <template>
-  <nav>
-    <router-link to="/">Sportheim Gemmingen</router-link> |
-    <router-link to="/about">About</router-link> |
-    <router-link to="/getraenkekarte">Getränkekarte</router-link> |
-    <router-link to="/speisekarte">Speisekarte</router-link>
-  </nav>
-  <router-view />
+  <div id="app" :class="{ 'dark-mode': isDarkMode, 'light-mode': !isDarkMode }">
+    <header class="d-flex justify-content-center">
+      <div class="d-flex justify-content-start">
+        <Navbar />
+      </div>
+    </header>
+    <nav>
+      <router-view />
+    </nav>
+  </div>
 </template>
 
 <style>
@@ -30,3 +33,6 @@ nav a.router-link-exact-active {
   color: #42b983;
 }
 </style>
+<script setup>
+import Navbar from "@/components/NavbarMain.vue";
+</script>
