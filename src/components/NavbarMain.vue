@@ -2,14 +2,19 @@
   <div id="app">
     <div class="navbar">
       <div class="logo">
-        <img src="Ebe%20Sponsor%20Ohne%20Sonntag%20PNG.png" alt="Logo" />
+        <img
+          :src="'src/assets/images/Ebe Sponsor Ohne Sonntag Klein PNG.png'"
+          :width="250"
+          :height="141"
+        />
         <span>Restaurant</span>
       </div>
       <div class="links">
-        <a href="#">Startseite</a>
-        <a href="#">Speisekarte</a>
-        <a href="#">Reservieren</a>
-        <a href="#">Kontakt</a>
+        <a href="/">Startseite</a>
+        <a href="/speisekarte">Speisekarte</a>
+        <a href="/getraenkekarte">Getränkekarte</a>
+        <a href="/">Dienste</a>
+        <a href="/oeffnungszeiten">Öffnungszeiten</a>
       </div>
     </div>
   </div>
