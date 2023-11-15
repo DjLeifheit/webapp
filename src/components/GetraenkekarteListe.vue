@@ -2,7 +2,7 @@
   <header>
     <h1>Getränke Karte</h1>
   </header>
-  <body>
+  <body class="getraenke">
     <ul class="liste" style="text-align: left">
       <h3>Biere</h3>
       <li
@@ -84,5 +84,12 @@ export default {
 <style scoped>
 .indented-list-item {
   margin-left: 30px; /* oder andere gewünschte Einrückung */
+}
+.getraenke {
+  border-right: white;
+  border-left: white;
+}
+li {
+  color: #2c3e50;
 }
 </style>

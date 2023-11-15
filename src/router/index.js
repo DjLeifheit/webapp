@@ -4,6 +4,7 @@ import getraenkeKarteView from "@/views/GetraenkeKarteView.vue";
 import SpeisekarteView from "@/views/SpeisekarteView.vue";
 import OeffnungsZeitenView from "@/views/OeffnungsZeitenView.vue";
 import DiensteView from "@/views/DiensteView.vue";
+import Eventsview from "@/views/Eventsview.vue";
 
 const routes = [
   {
@@ -39,6 +40,11 @@ const routes = [
     path: "/dienste",
     name: "Dienste",
     component: DiensteView,
+  },
+  {
+    path: "/events",
+    name: "Events",
+    component: Eventsview,
   },
 ];
 

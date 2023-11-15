@@ -4,9 +4,9 @@
   </header>
   <body>
     <ul>
-      <li v-for="(dienst, index) in dienste" :key="index">
+      <h3 v-for="(dienst, index) in dienste" :key="index">
         {{ dienst.name }}
-      </li>
+      </h3>
     </ul>
   </body>
 </template>
@@ -30,4 +30,8 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+body {
+  border: white;
+}
+</style>
